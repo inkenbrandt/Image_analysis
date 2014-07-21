@@ -1,14 +1,12 @@
-# -*- coding: utf-8 -*-
+
 """
 Created on Tue Jul 08 14:28:18 2014
-
 @author: paulinkenbrandt
 """
 import cv2
-import numpy as np
 from matplotlib import pyplot as plt
 
-img = cv2.imread('C:\\Users\\PAULINKENBRANDT\\Documents\\GitHub\\Image_Analysis\\IMG_0441.jpg')
+img = cv2.imread('C:\\Users\\PAULINKENBRANDT\\Documents\\GitHub\\Image_Analysis\\fox.jpg')
 b,g,r = cv2.split(img)
 img2 = cv2.merge([r,g,b])
 
