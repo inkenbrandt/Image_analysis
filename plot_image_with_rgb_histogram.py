@@ -8,7 +8,9 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
-img = cv2.imread('C:\\Users\\PAULINKENBRANDT\\Documents\\GitHub\\Image_Analysis\\fox.jpg')
+img = cv2.imread('C:\\Users\\PAULINKENBRANDT\\Documents\\GitHub\\Image_Analysis\\IMG_0441.jpg')
+b,g,r = cv2.split(img)
+img2 = cv2.merge([r,g,b])
 
 color = ('b','g','r')
 plt.subplot(2,1,1)
@@ -20,7 +22,7 @@ for i,col in enumerate(color):
 
 ax =plt.subplot(2,1,2)
 
-plt.imshow(img)
+plt.imshow(img2)
 
 ax.axis('off')
 
