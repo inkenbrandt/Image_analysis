@@ -7,7 +7,7 @@ import cv2
 from matplotlib import pyplot as plt
 
 #img = cv2.imread('C:\\Users\\PAULINKENBRANDT\\Documents\\GitHub\\Image_Analysis\\DSC_0723.png')
-img = cv2.imread('A:\\dcim\\100D5100\\DSC_0060.jpg')
+img = cv2.imread('C:/Users/PAULINKENBRANDT/Pictures/iCloud Photos/My Photo Stream/IMG_0495.jpg')
 #b,g,r = cv2.split(img)
 #img = cv2.merge([r,g,b])
 img = img[:,:,::-1]
